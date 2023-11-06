@@ -8,7 +8,7 @@ import { ApiService } from 'src/app/service/api.service';
   styleUrls: ['./http.component.scss'],
 })
 export class HttpComponent implements OnInit {
-  
+  users: any = [];
   constructor(private api: ApiService) {}
 
   ngOnInit(): void {
@@ -17,17 +17,19 @@ export class HttpComponent implements OnInit {
   }
 
   getData() {
-    this.api.fetch()
-    .then(response => response.json())
-    .then(json => console.log(json))
+    this.api
+      .fetch()
+      .then((response) => response.json())
+      .then((json) => console.log(json));
   }
 
   getHttp() {
     this.api
       .get()
       .pipe(
-        tap(data => {
-          console.log(data);
+        tap((data: any) => {
+          this.users = data;
+          console.log(this.users);
         })
       )
       .subscribe();

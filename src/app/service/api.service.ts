@@ -5,10 +5,10 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root',
 })
 export class ApiService implements OnInit {
-  url = 'https://jsonplaceholder.typicode.com/todos/1';
+  url = 'https://jsonplaceholder.typicode.com/users';
 
   constructor(private http: HttpClient) {}
-  
+
   ngOnInit(): void {}
 
   fetch() {

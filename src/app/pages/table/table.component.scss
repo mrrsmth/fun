@@ -6,9 +6,10 @@
     --mat-table-row-item-outline-width: 1px;
     table-layout: auto;
     white-space: normal;
-    background-color: #d49d99;
-    &:hover {
-        background-color: #da1507;
+    background-color: rgb(246, 247, 248);
+    td:hover {
+        background-color: rgb(66, 82, 224);
+        color: #fff;
     }
 }
 
