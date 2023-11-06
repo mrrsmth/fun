@@ -14,12 +14,15 @@ import { TableComponent } from './pages/table/table.component';
 import {MatIconModule} from '@angular/material/icon';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import { HttpComponent } from './pages/http/http.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
     PageComponent,
-    TableComponent
+    TableComponent,
+    HttpComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +35,8 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     MatTableModule,
     MatIconModule,
     MatInputModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent],
