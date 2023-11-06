@@ -1,0 +1,18 @@
+.mdc-checkbox .mdc-checkbox__native-control:enabled:checked~.mdc-checkbox__background, .mdc-checkbox .mdc-checkbox__native-control:enabled:indeterminate~.mdc-checkbox__background, .mdc-checkbox .mdc-checkbox__native-control[data-indeterminate=true]:enabled~.mdc-checkbox__background {
+    border-color: #3b3625;
+    // background-color: var(--mdc-checkbox-selected-icon-color);
+}
+
+// .mdc-checkbox .mdc-checkbox__native-control {
+//     top: calc((var(--mdc-checkbox-state-layer-size) - var(--mdc-checkbox-state-layer-size)) / 2);
+//     right: calc((var(--mdc-checkbox-state-layer-size) - var(--mdc-checkbox-state-layer-size)) / 2);
+//     left: calc((var(--mdc-checkbox-state-layer-size) - var(--mdc-checkbox-state-layer-size)) / 2);
+//     width: var(--mdc-checkbox-state-layer-size);
+//     height: var(--mdc-checkbox-state-layer-size);
+// }
+#id {
+    .mdc-checkbox .mdc-checkbox__native-control:enabled:checked~.mdc-checkbox__background, .mdc-checkbox .mdc-checkbox__native-control:enabled:indeterminate~.mdc-checkbox__background, .mdc-checkbox .mdc-checkbox__native-control[data-indeterminate=true]:enabled~.mdc-checkbox__background {
+        border-color: #438591;
+        background-color: var(--mdc-checkbox-selected-icon-color);
+    }
+}

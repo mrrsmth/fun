@@ -1,0 +1,14 @@
+.mdc-data-table__table {
+    min-width: 85%;
+}
+
+.mat-mdc-table {
+    --mat-table-row-item-outline-width: 1px;
+    table-layout: auto;
+    white-space: normal;
+    background-color: #d49d99;
+    &:hover {
+        background-color: #da1507;
+    }
+}
+

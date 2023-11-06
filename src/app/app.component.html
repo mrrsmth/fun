@@ -1,0 +1,40 @@
+<div class="container">
+  <mat-slide-toggle>Toggle me!</mat-slide-toggle>
+<app-table></app-table>
+<table>
+  <tbody>
+    <thead>
+      Расходы
+    </thead>
+    <button mat-raised-button (click)="addItem()">Add</button>
+    <tr>
+      <td><input name="text" [(ngModel)]="text" /></td>
+      <td>
+        <input type="number" placeholder="Add price" [(ngModel)]="price" />
+      </td>
+    </tr>
+    <tr>
+      <td>Item</td>
+      <td>Price</td>
+      <td>All price: {{ allPrice }}</td>
+    </tr>
+    <tr *ngFor="let item of items">
+      <td>{{ item.text }}</td>
+      <td>{{ item.price }}</td>
+    </tr>
+  </tbody>
+</table>
+
+<div *ngIf="notItemName === true" class="alert">
+  <p>Add item name!</p>
+</div>
+
+<app-page [text]="currentItem"></app-page>
+
+<div>
+  <input [(ngModel)]="test" type="checkbox" id="subscribeNews" name="subscribe"/>
+  <label for="subscribeNews">Subscribe to newsletter?</label>
+</div>
+
+
+</div>
